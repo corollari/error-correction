@@ -1,10 +1,10 @@
 function ortogo= ortogonal(C)
 
-n=size(C)(2)
+n=size(C)(2);
 
 F=double(bsxfun(@(u,v)bitand(u,v)~=0, 2.^(0:(n-1)), (0:(2^n)-1)'));
 
-ortogo=[]
+ortogo=[];
 for i=1:size(F)(1)
 iscode=true;
 for j=1:size(C)(1)
